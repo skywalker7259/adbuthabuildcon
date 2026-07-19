@@ -20,20 +20,16 @@ const Navbar = () => {
       <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
         {navLinks.map((link) => (
           <li key={link.name}>
-            <NavLink 
-              to={link.path} 
-              className={({isActive}) => (isActive ? 'active-link' : '')}
-              onClick={() => setIsOpen(false)}
-            >
+            <NavLink to={link.path} onClick={() => setIsOpen(false)}>
               {link.name}
             </NavLink>
           </li>
         ))}
       </ul>
 
+      {/* Kept out of mobile for a cleaner look */}
       <div className="nav-actions">
-        <button>Sign In</button>
-        <button className="cta-btn">Book a Consultation</button>
+        <button className="btn-signin">Sign In</button>
       </div>
     </nav>
   );

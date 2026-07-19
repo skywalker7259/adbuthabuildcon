@@ -1,23 +1,69 @@
 .hero {
-  padding: 4rem 5%;
-  background-color: #f7fafc;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                    url('../assets/images/hero-bg.png');
+  background-size: cover;
+  /* Adjust the second value to move the image up */
+  /* 'center' is 50%. A value like '30%' or '20%' will shift the image upward. */
+  background-position: center -100px; 
+  min-height: 85vh;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  text-align: center;
+  position: relative;
+}
+
+.hero-title, .hero-description, .hero-actions {
+  transition: transform 0.3s ease; /* Ensures smooth response to style changes */
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-bottom-content {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.hero-tag {
-  color: #ecc94b;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin: 1rem 0;
+.hero-description {
+  color: #ffffff;
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.hero-actions button {
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-filled {
+  background-color: #ecc94b;
+  border: 2px solid #ecc94b;
+  color: #1a202c;
 }

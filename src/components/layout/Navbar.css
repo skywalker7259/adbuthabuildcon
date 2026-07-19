@@ -2,16 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5%; /* Slightly reduced vertical padding for better balance */
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0.5rem 5%;
+  background-color: #000000; /* Dark wood-tone theme */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid #ecc94b; /* Gold accent */
 }
 
 .logo img {
-  height: 80px; /* Logo size updated as requested */
+  height: 60px; /* Adjusted for better proportion with the dark header */
   width: auto;
   display: block;
 }
@@ -26,7 +27,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #1a202c;
+  color: #ffffff; /* White text for contrast */
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -39,7 +40,7 @@
   border-bottom: 2px solid #ecc94b;
 }
 
-/* Updated Button Styles to match reference image */
+/* Updated Button Styles */
 .nav-actions {
   display: flex;
   gap: 1rem;
@@ -51,26 +52,27 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid #1a202c; /* Matches outline style */
+  border: 1px solid #ffffff; /* White outline */
   background: transparent;
-  color: #1a202c;
+  color: #ffffff;
 }
 
 .nav-actions .cta-btn {
   background-color: #ecc94b;
   border: 1px solid #ecc94b;
-  color: #1a202c;
+  color: #C88E75;
 }
 
 .nav-actions .cta-btn:hover {
   background-color: #d6b437;
+  border-color: #d6b437;
 }
 
 .menu-toggle {
   display: none;
   padding: 0.5rem 1rem;
-  background-color: #1a202c;
-  color: #ecc94b;
+  background-color: #ecc94b;
+  color: #2d2521;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -85,13 +87,13 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 96px; /* Adjusted to fit the 80px logo + padding */
+    top: 76px; /* Adjusted for 60px logo */
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #000000;
     padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #ecc94b;
   }
 
   .nav-links.show {

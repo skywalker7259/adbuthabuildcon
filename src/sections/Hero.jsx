@@ -4,13 +4,21 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-content">
-        <p className="hero-tag">TRUSTED CONSTRUCTION PARTNER</p>
-        <h1>Building Your Vision,<br />One Brick at a Time</h1>
-        <p>From the first blueprint to the final handover, we're your trusted partner in crafting spaces that stand the test of time.</p>
-        <div className="hero-actions">
-          <button className="primary-btn">Get a Free Quote</button>
-          <button className="secondary-btn">Book a Consultation</button>
+      {/* Title movement */}
+      <h1 className="hero-title" style={{transform: "translateY(20px)"}}>
+       
+      </h1>
+      
+      <div className="hero-bottom-content">
+        {/* Description movement */}
+        <p className="hero-description" style={{transform: "translateY(90px)"}}>
+          From the first blueprint to the final handover, we're your trusted partner in crafting spaces that stand the test of time.
+        </p>
+        
+        {/* Button container movement */}
+        <div className="hero-actions" style={{transform: "translateY(75px)"}}>
+          <button className="btn-outline">Get a Free Quote</button>
+          <button className="btn-filled">Book a Consultation</button>
         </div>
       </div>
     </section>

@@ -1,22 +1,22 @@
 export const navLinks = [
   {name: 'Home', path: '/'},
-  {name: 'About', path: '/about'},
+  {name: 'About Us', path: '/about'},
   {name: 'Services', path: '/services'},
   {name: 'Portfolio', path: '/portfolio'},
   {name: 'Contact', path: '/contact'}
 ];
 
 export const contactDetails = {
-  address: '123 Builder\'s Avenue, Hyderabad, Telangana 500001',
-  phone: '+91 98765 43210',
+  address: '123 Builder\'s Avenue, Bangalore, India',
+  phone: '+91 8861233888',
   email: 'hello@adbuthabuildcon.com'
 };
 export const services = [
-  {id: '01', title: 'Residential Construction', description: 'More than a structure — it\'s where life happens. We build custom homes with meticulous attention to detail, quality materials, and a deep respect for your vision.'},
-  {id: '02', title: 'Commercial Construction', description: 'We deliver commercial spaces that work as hard as you do. From office complexes to retail developments, our team manages every phase with precision and professionalism.'},
-  {id: '03', title: 'Renovation & Remodeling', description: 'Breathe new life into existing spaces. Whether it\'s a kitchen refresh or a full structural overhaul, we handle renovations with minimal disruption and maximum impact.'},
-  {id: '04', title: 'Interior Design', description: 'Beautiful spaces start from the inside. Our interior design team creates environments that are functional, elegant, and uniquely yours.'},
-  {id: '05', title: 'Project Management', description: 'Complex projects need steady hands. We coordinate every contractor, timeline, and budget line so you can focus on what matters.'}
+  {id: '01', title: 'Architectural Planning & Approvals', description: 'From concept to approval, we create innovative architectural designs and handle all required statutory approvals, including BBMP sanction plans, ensuring your project begins on a strong legal and technical foundation.'},
+  {id: '02', title: 'Construction & Project Execution', description: 'We deliver high-quality residential and commercial construction with expert site supervision and end-to-end project management, ensuring timely completion, superior craftsmanship, and complete transparency.'},
+  {id: '03', title: 'Structural & Engineering Solutions', description: 'Our engineering team provides safe, efficient, and sustainable structural, MEP, and prefabricated building solutions that meet modern construction standards and optimize project performance..'},
+  {id: '04', title: 'Interior Design & Space Transformation', description: 'We design functional and elegant interiors tailored to your lifestyle or business needs, combining aesthetics, comfort, and practicality to create inspiring spaces.'},
+  {id: '05', title: 'Property Consultancy & Cost Management', description: 'Make informed property decisions with our professional estimation, valuation, and real estate consultancy services, helping you maximize value while staying within budget.'}
 ];
 export const portfolioItems = [
   {id: 1, category: 'Residential', title: 'Modern Villa Project'},
