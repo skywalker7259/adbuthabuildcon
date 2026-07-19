@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Recommended for a clean professional look */
+  background-color: #ffffff;
+  color: #1a202c;
+}
+
+* {
+  box-sizing: border-box;
+}

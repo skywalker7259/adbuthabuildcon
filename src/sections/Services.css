@@ -1,0 +1,27 @@
+.services-section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.section-label {
+  color: #ecc94b;
+  font-weight: 700;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  text-align: left;
+  padding: 1.5rem;
+  border: 1px solid #edf2f7;
+}
+
+.service-id {
+  color: #ecc94b;
+  font-weight: bold;
+}

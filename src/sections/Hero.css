@@ -1,0 +1,23 @@
+.hero {
+  padding: 4rem 5%;
+  background-color: #f7fafc;
+  display: flex;
+  align-items: center;
+}
+
+.hero-tag {
+  color: #ecc94b;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}

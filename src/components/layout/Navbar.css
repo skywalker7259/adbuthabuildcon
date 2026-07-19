@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%; /* Slightly reduced vertical padding for better balance */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 80px; /* Logo size updated as requested */
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a202c;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links .active-link {
+  color: #ecc94b;
+}
+
+.nav-links .active-link {
+  border-bottom: 2px solid #ecc94b;
+}
+
+/* Updated Button Styles to match reference image */
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-actions button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #1a202c; /* Matches outline style */
+  background: transparent;
+  color: #1a202c;
+}
+
+.nav-actions .cta-btn {
+  background-color: #ecc94b;
+  border: 1px solid #ecc94b;
+  color: #1a202c;
+}
+
+.nav-actions .cta-btn:hover {
+  background-color: #d6b437;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 0.5rem 1rem;
+  background-color: #1a202c;
+  color: #ecc94b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 96px; /* Adjusted to fit the 80px logo + padding */
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+}

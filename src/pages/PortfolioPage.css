@@ -1,0 +1,21 @@
+.portfolio-page {
+  padding: 4rem 5%;
+}
+
+.portfolio-page h1 {
+  margin-bottom: 2rem;
+  color: #1a202c;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  padding: 2rem;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
