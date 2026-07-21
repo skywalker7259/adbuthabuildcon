@@ -1,33 +1,36 @@
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
                     url('../assets/images/hero-bg.png');
   background-size: cover;
-  /* Adjust the second value to move the image up */
-  /* 'center' is 50%. A value like '30%' or '20%' will shift the image upward. */
-  background-position: center -100px; 
-  min-height: 85vh;
+  
+  /* --- DESKTOP SETTING --- */
+  background-position: center 65%; 
+  min-height: 70vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 3rem 5%;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-title, .hero-description, .hero-actions {
-  transition: transform 0.3s ease; /* Ensures smooth response to style changes */
+  transition: transform 0.3s ease;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #ffffff;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+/* --- CONTROL DESKTOP TEXT & BUTTON POSITION HERE --- */
 .hero-bottom-content {
   margin-top: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,9 +38,9 @@
 
 .hero-description {
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   max-width: 700px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1.5rem auto;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
@@ -49,7 +52,7 @@
 }
 
 .hero-actions button {
-  padding: 0.9rem 2rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
@@ -66,4 +69,46 @@
   background-color: #ecc94b;
   border: 2px solid #ecc94b;
   color: #1a202c;
+}
+
+/* --- MOBILE SPECIFIC SETTINGS (Screens 700px and below) --- */
+@media (max-width: 700px) {
+  .hero {
+    min-height: 40vh;
+    
+    /* --- MOBILE BACKGROUND POSITION --- */
+    background-position: center -75px; 
+    
+    padding: 2rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  /* --- CONTROL MOBILE TEXT & BUTTON POSITION HERE --- */
+  .hero-bottom-content {
+    margin-bottom: 4rem; 
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* --- SIDE-BY-SIDE MOBILE BUTTONS --- */
+  .hero-actions {
+    flex-direction: row; /* Aligns buttons horizontally */
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 0.5rem;
+  }
+
+  .hero-actions button {
+    flex: 1; /* Distributes equal width side by side */
+    width: auto;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.90rem; /* Scales text down slightly to fit cleanly */
+  }
 }
