@@ -12,9 +12,9 @@ export const navLinks = [
 ];
 
 export const contactDetails = {
-  address: '123 Builder\'s Avenue, Bangalore, India',
-  phone: '+91 8861233888',
-  email: 'hello@adbuthabuildcon.com'
+  address: '# 5A, 2nd floor ,VSM Tower, Hesaraghatta Road, Bangalore-57, India',
+  phone: '+91 8861233888 / 9844181181',
+  email: 'adbuthabuildcon@gmail.com'
 };
 
 export const services = [
