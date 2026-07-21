@@ -1,7 +1,7 @@
 .stats {
   display: flex;
   justify-content: space-around;
-  padding: 2rem 5%;
+  padding: 1.5rem 5%;
   background-color: #1a202c;
   color: #ffffff;
   text-align: center;
@@ -9,7 +9,7 @@
 
 .stat-item h2 {
   color: #ecc94b;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 0;
 }
 

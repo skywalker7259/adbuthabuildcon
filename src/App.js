@@ -8,6 +8,8 @@ import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import CategoryGallery from './pages/CategoryGallery';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
 
 const ScrollToTop = () => {
   const {pathname} = useLocation();
@@ -32,6 +34,8 @@ const App = () => {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio/:categoryId" element={<CategoryGallery />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Routes>
         <Footer />
       </div>

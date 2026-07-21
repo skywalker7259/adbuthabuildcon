@@ -56,19 +56,42 @@
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
+/* --- BUTTON HOVER & ACTIVE (CLICK) EFFECTS --- */
 .btn-outline {
   background: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
 }
 
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-outline:active {
+  transform: translateY(1px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .btn-filled {
   background-color: #ecc94b;
   border: 2px solid #ecc94b;
   color: #1a202c;
+}
+
+.btn-filled:hover {
+  background-color: #d6b437;
+  border-color: #d6b437;
+  transform: translateY(-2px);
+}
+
+.btn-filled:active {
+  transform: translateY(1px);
+  background-color: #be9f2a;
+  border-color: #be9f2a;
 }
 
 /* --- MOBILE SPECIFIC SETTINGS (Screens 700px and below) --- */
@@ -98,7 +121,7 @@
 
   /* --- SIDE-BY-SIDE MOBILE BUTTONS --- */
   .hero-actions {
-    flex-direction: row; /* Aligns buttons horizontally */
+    flex-direction: row; 
     gap: 0.75rem;
     width: 100%;
     max-width: 400px;
@@ -106,9 +129,9 @@
   }
 
   .hero-actions button {
-    flex: 1; /* Distributes equal width side by side */
+    flex: 1; 
     width: auto;
     padding: 0.5rem 0.5rem;
-    font-size: 0.90rem; /* Scales text down slightly to fit cleanly */
+    font-size: 0.90rem; 
   }
 }

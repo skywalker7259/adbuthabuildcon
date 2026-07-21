@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     <section className="stats">
       <div className="stat-item">
-        <h2>250+</h2>
+        <h2>30+</h2>
         <p>Projects Completed</p>
       </div>
       <div className="stat-item">
@@ -17,7 +17,7 @@ const Stats = () => {
         <p>Client Satisfaction</p>
       </div>
       <div className="stat-item">
-        <h2>50+</h2>
+        <h2>5+</h2>
         <p>Expert Team Members</p>
       </div>
     </section>

@@ -1,17 +1,17 @@
 .services-section {
-  padding: 4rem 5%;
+  padding: 3rem 5%;
   text-align: center;
 }
 
 .section-label {
   color: #ecc94b;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 

@@ -1,27 +1,30 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="hero">
-      {/* Title movement */}
-      <h1 className="hero-title" style={{transform: "translateY(20px)"}}>
-       
-      </h1>
-      
+    <div className="hero">
+      <div className="hero-top-content">
+        <h1 className="hero-title">Adbutha Buildcon</h1>
+      </div>
+
       <div className="hero-bottom-content">
-        {/* Description movement */}
-        <p className="hero-description" style={{transform: "translateY(90px)"}}>
+        <p className="hero-description">
           From the first blueprint to the final handover, we're your trusted partner in crafting spaces that stand the test of time.
         </p>
-        
-        {/* Button container movement */}
-        <div className="hero-actions" style={{transform: "translateY(75px)"}}>
-          <button className="btn-outline">Get a Free Quote</button>
-          <button className="btn-filled">Book a Consultation</button>
+        <div className="hero-actions">
+          <button className="btn-outline" onClick={() => navigate('/contact')}>
+            Get a Free Quote
+          </button>
+          <button className="btn-filled" onClick={() => navigate('/contact')}>
+            Book a Consultation
+          </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
