@@ -1,12 +1,23 @@
 import React from 'react';
 
-const ServicesPage = () => {
+import {services} from '../constants/siteConfig';
+
+const Services = () => {
   return (
-    <div style={{padding: '4rem 5%'}}>
-      <h1>Our Services</h1>
-      <p>Detailed information about all our construction and design services will be displayed here.</p>
-    </div>
+    <section className="services-section">
+      <p className="section-label">OUR SERVICES</p>
+      <h2>What We Build</h2>
+      <div className="services-grid">
+        {services.map((service) => (
+          <div key={service.id} className="service-card">
+            <span className="service-id">{service.id}</span>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default ServicesPage;
+export default Services;
