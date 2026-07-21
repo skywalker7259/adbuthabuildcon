@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-top-content">
-        <h1 className="hero-title">Adbutha Buildcon</h1>
+        <h1 className="hero-title"></h1>
       </div>
 
       <div className="hero-bottom-content">
